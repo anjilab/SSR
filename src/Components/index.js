@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./home";
 import Contact from "./contact";
 import About from "./about";
@@ -15,7 +15,6 @@ class Index extends React.Component {
     return (
       <div className="App">
         <h1> Hello React Revise </h1>
-        
         <div>
           <Switch>
             <Route exact path="/" component={Home} />

@@ -10,12 +10,12 @@ const About = () => {
       <p>This is the Home page for react revises</p>
        Click the button to go different page
        <div>
-        {/* <Link to="/contact">
+        <Link to="/contact">
           <button> Contact</button>
         </Link>
         <Link to="/about">
           <button>About</button>
-        </Link> */}
+        </Link>
       </div>
        
         <p>
