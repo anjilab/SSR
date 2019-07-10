@@ -6,7 +6,8 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 // ReactDOM.render(<App />, document.getElementById("root"));
-ReactDOM.hydrate(<App />, document.getElementById("root"));
+// ReactDOM.hydrate(<App />, document.getElementById("root")); //ssr simple ma 
+ReactDOM.hydrate(<App />, document.getElementById("root")); //ssr with react router
 // ReactDOM.render(<WaterMark />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change

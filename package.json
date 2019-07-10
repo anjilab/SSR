@@ -6,6 +6,7 @@
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
+    "babel-plugin-transform-assets": "^1.0.2",
     "express": "^4.17.1",
     "ignore-styles": "^5.0.1",
     "react": "^16.8.2",
@@ -22,6 +23,25 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  
+    "babel": {
+      "plugins": [
+        "@babel/plugin-transform-modules-commonjs",
+        [
+          "transform-assets",
+          {
+            "extensions": [
+              "css",
+              "svg",
+              "png",
+              "jpg"
+            ],
+            "name": "build/static/media/[name].[hash:8].[ext]"
+          }
+        ]
+      ]
+  
   },
   "browserslist": [
     ">0.2%",
