@@ -3,6 +3,7 @@ import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
 import Home from "./home";
 import Contact from "./contact";
 import About from "./about";
+import HomeHooks from "./homeWithHooks";
 
 // import "./App.css";
 // import Comp1 from './Components/comp1';
@@ -21,6 +22,7 @@ class Index extends React.Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/homehooks" component={HomeHooks}/>
           </Switch>
         </div>
       </div>
